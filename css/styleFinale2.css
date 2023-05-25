@@ -1,0 +1,292 @@
+:root{
+    --marrone:#a58b71;
+    --red: rgb(190, 50, 50);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Sedgwick Ave Display;
+    outline: none;
+    border: none;
+    text-decoration: none;
+   
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+
+}
+section{
+    padding:2rem 9% ;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+
+}
+
+.heading span{
+    color: var(--marrone);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 5rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition : background 0.9s;
+}
+
+.btn:hover{
+    background :rgb(190, 50, 50);
+}
+
+
+
+header{
+    /*position: fixed;*/
+    top: 0; left: 0; right: 0;
+    background-color: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+header .logo span{
+    color: var(--marrone);
+    
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    color: var(--marrone);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+    text-decoration: none;
+
+}
+
+header .icons a:hover{
+    color:var(--marrone);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem ;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: url(../images/sfondo2.jpeg) no-repeat;
+    background-size: cover;
+    background-position: left;
+    padding-top: 200px;
+}
+.home .content{
+    max-width: 50rem;
+    
+}
+.home .content h3{
+    font-size: 6rem;
+    color: rgb(190, 18, 18);
+    
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--marrone);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.footer{
+    display:grid ;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1rem;
+    color: var(--text-color);
+}
+.footer-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box p{
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social a .bx{
+    font-size: 24px;
+    color: var(--text-color);
+    padding: 10px;
+    background: var(--second-color);
+    border-radius: 0.5rem;
+}
+.social a .bx:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+.footer-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-box li a{
+    color: var(--text-color);
+}
+.footer-box li a:hover{
+    color: var(--main-color);
+}
+.payment{
+    display: flex;
+    align-items: center;
+    column-gap: 00.5rem;
+}
+.payment img{
+    width: 44px;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position:left ;
+    }
+}
+/*--------------------Dettagli Prodotto ----------------------------------*/
+
+
+/* ---------------- Footer ------------------*/
+.container{
+    padding-left: 50px;
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    background-color: #ffffff;
+}
+
+@media(max-width:768px){
+
+    html .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 0;left: 0;right: 0;
+        background-color: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0 ,100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0 ,100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #fff;
+        border:.1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+
+    }
+    .home .content span{
+        font-size: 2.5rem;
+
+    }
+    
+
+
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+}
+

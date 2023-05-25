@@ -1,0 +1,106 @@
+
+.contenitore {
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 80px;
+    display: flex;
+    
+}
+.contenitore .sinistra{
+    width: 80%;
+}
+
+.intestazione{
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.sinistra .categorie{
+    display: flex;
+    justify-content: space-between;
+}
+.sinistra .categorie i{
+    font-size: 2rem;
+}
+.intestazione .quantita{
+    margin-right: 0px;
+}
+.sinistra .gruppo{
+    margin-top: 40px;
+    
+}
+.sinistra .gruppo .dacomprare{
+    font-size: 2rem;
+    display: flex;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 15px;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+.sinistra .gruppo .dacomprare h6{
+    font-size: 2rem;
+}
+.sinistra .gruppo .dacomprare .nomep{
+    top :50%;
+    transform: translateY(-50%);
+    margin: 0;
+    position: relative;
+    
+}
+.immagine img{
+    width: 60%;
+}
+.sinistra .gruppo .dacomprare .btn-group{
+    display: flexbox;  
+    background-color: #fff; 
+}
+.sinistra .gruppo .dacomprare .bq{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 5%;
+    
+}
+.sinistra .gruppo .dacomprare .bmeno{
+    width: 25px;
+    margin-left: 5px;
+    background-color: #ffffff;
+}
+.sinistra .gruppo .dacomprare .bpiu{
+    width: 25px;
+    margin-right: 5px;
+    background-color: #fff;
+}
+.sinistra .gruppo .dacomprare .prezzo{
+    margin-right:2%;
+}
+.gruppo .totale sp{
+    font-size: 3rem;
+}
+.totale {
+    background-color: rgba(0, 0, 0, 0.185);
+    font-size: 2rem;
+    display:flex;
+    justify-content: space-between;
+    
+}
+.contenitore .destra{
+    
+    text-align: center;
+    width: 30%;
+}
+.destra .accediacq{
+    margin-top: 10px;
+}
+.destra .acq{
+    margin-top: 60px;
+    font-size: 3rem;
+    border: 1px solid rgb(84, 11, 11);
+    background-color: rgb(241, 48, 48);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+}

@@ -1,0 +1,60 @@
+.contenitore {
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 80px;
+    width: 100%;
+}
+.contenitore2{
+    display: flex;
+    justify-items: normal;
+    margin-top: 30px;
+}
+.compila{
+    width: 50%;
+}
+.recap{
+    width: 50%;
+}
+.form{
+    font-size: 1.5rem;
+}
+.recap{
+    font-size: 2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.nelcarrello{
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-areas: 'nome nome nome nome prezzo'
+                        'taglia taglia taglia taglia colore';
+}
+.nomep{
+    grid-area: nome;
+    font-weight: bold;
+
+}
+.taglia{
+    grid-area: taglia;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.prezzo{
+    grid-area:prezzo;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.colore{
+    grid-area:colore;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+.totale{
+    display: flex;
+    gap: 57%;
+}

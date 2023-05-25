@@ -1,0 +1,35 @@
+.contenitore{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+}
+span.titolo {
+    font-size: 3rem;
+}
+div#accordionExample {
+    margin-top: 30px;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgb(169, 220, 233);
+}
+button.accordion-button {
+    font-size: 2rem;
+}
+div#collapse66 {
+    font-size: 1.5rem;
+}
+.info_prod {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: #8195cc 1px solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* margin-top: 3px; */
+}
+.info_prod p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
